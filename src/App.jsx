@@ -5,7 +5,7 @@ import GuessTheNumber from './components/GuessTheNumber/GuessTheNumber'
 import Messenger from './components/Messenger/Messenger'
 
 function App() {
-	const [activeIndex, setActiveIndex] = useState(1)
+	const [activeIndex, setActiveIndex] = useState(0)
 	return (
 		<div className="app-wrapper">
 			<div>
