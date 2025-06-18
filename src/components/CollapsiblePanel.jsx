@@ -4,9 +4,9 @@ const CollapsiblePanel = ({ title, children, isActive, onShow }) => {
 		<div className={s.CollapsiblePanel}>
 			<h3
 				onClick={onShow}
-				className={`${s.title} ${isActive ? s.border : ''}`}
+				className={`${s.title} ${isActive ? s.active : ''}`}
 			>
-				{title}
+				{title} 👆
 			</h3>
 			{isActive && <div className={s.children}>{children}</div>}
 		</div>

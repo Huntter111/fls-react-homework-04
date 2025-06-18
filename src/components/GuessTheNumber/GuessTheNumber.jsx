@@ -94,7 +94,12 @@ const GuessTheNumber = () => {
 				{gameOver && (
 					<div className={s.result}>
 						<h2>Гру програв {loser === 1 ? 'Перший' : 'Другий'} гравець!</h2>
-						<button onClick={handleReset}>Reset the game</button>
+						<button
+							onClick={handleReset}
+							className={s.reset}
+						>
+							Reset the game
+						</button>
 					</div>
 				)}
 			</div>

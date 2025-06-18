@@ -11,7 +11,7 @@
 	border: 2px solid gray;
 }
 .button {
-	width: 150px;
+	width: 100%;
 	&:disabled {
 		@media (any-hover: hover) {
 			&:hover {
@@ -19,5 +19,8 @@
 				cursor: default;
 			}
 		}
+	}
+	@media (min-width: 767px) {
+		width: 150px;
 	}
 }

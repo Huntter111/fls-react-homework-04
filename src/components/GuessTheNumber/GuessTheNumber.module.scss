@@ -1,8 +1,21 @@
 .wrapperPlayers {
-	padding: 32px;
+	padding: 16px 0;
+
 	display: flex;
+	flex-wrap: wrap;
 	gap: 32px;
 }
 .image {
 	border: 1px solid gray;
+	max-width: 100%;
+}
+.reset {
+	background-color: #181983;
+	color: #fff;
+	transition: all 0.3s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: rgba(24, 26, 131, 0.9);
+		}
+	}
 }
