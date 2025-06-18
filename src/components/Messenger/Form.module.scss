@@ -1,0 +1,23 @@
+.form {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+}
+.input {
+	outline: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 2px solid gray;
+}
+.button {
+	width: 150px;
+	&:disabled {
+		@media (any-hover: hover) {
+			&:hover {
+				border: 1px solid transparent;
+				cursor: default;
+			}
+		}
+	}
+}

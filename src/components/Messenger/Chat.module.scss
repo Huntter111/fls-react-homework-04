@@ -1,0 +1,93 @@
+.chat {
+	height: 350px;
+	max-width: 400px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 1px solid gray;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+	margin-bottom: 32px;
+}
+.message {
+	display: flex;
+	flex-direction: column;
+	max-width: 250px;
+	padding: 5px 10px;
+	// align-items: center;
+	font-size: 20px;
+	row-gap: 4px;
+	border-radius: 16px;
+	color: #ffffff;
+	// Повідомлення зліва
+	&.left {
+		color: #ffffff;
+		align-self: flex-start;
+		background-color: rgba(43, 43, 43, 0.4);
+	}
+	// Повідомлення справа
+	&.right {
+		color: #000;
+		align-self: flex-end;
+		background-color: rgba(58, 58, 58, 0.2);
+	}
+}
+.verticalLine {
+	height: 16px;
+	min-width: 1px;
+	background-color: #ffffff;
+	// box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+}
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	background-color: rgb(39, 39, 39);
+	// width: 120px;
+	// padding: 2px 3px;
+	border-radius: 32px;
+}
+.button {
+	font-size: 12px;
+	display: inline-flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-color: transparent;
+	padding: 5px 10px 5px 10px;
+
+	color: white;
+
+	gap: 4px;
+	span {
+		svg {
+			fill: white;
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			border: 1px solid transparent;
+		}
+	}
+}
+.counter {
+	max-width: 20px;
+}
+.like {
+	transform: translateY(1px);
+	width: 12px;
+	height: 12px;
+	transition: fill 0.3s;
+}
+.dislike {
+	transform: rotate(180deg) translateY(-2px);
+	width: 12px;
+	height: 12px;
+	transition: fill 0.3s;
+}

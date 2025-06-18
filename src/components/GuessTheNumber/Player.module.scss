@@ -1,0 +1,62 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+.input {
+	outline: none;
+	padding: 10px 15px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 2px solid gray;
+}
+.inputBlock {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+	label {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 8px;
+	}
+	button {
+		&:not(:disabled) {
+			background-color: green;
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+}
+.error {
+	height: 30px;
+	margin-top: 10px;
+	color: red;
+	font-weight: 700;
+}
+.guessedList {
+	padding: 10px 10px;
+	h4 {
+		margin: 0;
+	}
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+.quantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		&:not(:last-child) {
+			&::after {
+				content: ', ';
+			}
+		}
+	}
+}
